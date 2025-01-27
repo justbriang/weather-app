@@ -59,21 +59,24 @@ class HomeScreen extends StatelessWidget {
                   color: theme.colorScheme.error.withValues(alpha: 0.1),
                   padding:
                       const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.wifi_off,
-                        color: theme.colorScheme.error,
-                        size: 20,
-                      ),
-                      const SizedBox(width: 8),
-                      Text(
-                        'Offline Mode - Showing cached data',
-                        style: theme.textTheme.bodyMedium?.copyWith(
+                  child: Center(
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(
+                          Icons.wifi_off,
                           color: theme.colorScheme.error,
+                          size: 20,
                         ),
-                      ),
-                    ],
+                        const SizedBox(width: 8),
+                        Text(
+                          'Offline Mode - Showing cached data',
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: theme.colorScheme.error,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               Expanded(

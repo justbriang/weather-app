@@ -1,16 +1,12 @@
-// main.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path_provider/path_provider.dart';
-
 import 'package:weatherapp/data/api/weather_service.dart';
 import 'package:weatherapp/ui/screens/home_screen.dart';
 import 'blocs/weather/weather_bloc.dart';
 import 'blocs/connectivity/connectivity_bloc.dart';
 import 'data/repositories/weather_repository.dart';
-
 import 'data/providers/local_storage_provider.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';

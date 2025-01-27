@@ -14,7 +14,7 @@ class ForecastWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Divider(
-          color: theme.colorScheme.onSurface.withOpacity(0.24),
+          color: theme.colorScheme.onSurface.withValues(alpha: 0.24),
           thickness: 0.5,
         ),
         const SizedBox(height: 20),
@@ -39,7 +39,7 @@ class ForecastWidget extends StatelessWidget {
             child: Text(
               _formatDateTime("${day.date}"),
               style: theme.textTheme.bodyMedium?.copyWith(
-                color: theme.colorScheme.onSurface.withOpacity(0.7),
+                color: theme.colorScheme.onSurface.withValues(alpha: 0.7),
                 fontWeight: FontWeight.w300,
               ),
             ),
